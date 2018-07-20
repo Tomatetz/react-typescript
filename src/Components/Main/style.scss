@@ -1,0 +1,23 @@
+.main-wrapper {
+    position: relative;
+    top: 30px;
+
+    .info-container {
+        background-color: #dfdfdf;
+        box-sizing: border-box;
+        width: 500px;
+        padding: 15px;
+
+        .info {
+            font-size: 13px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 200px 300px;
+
+            .value {
+                margin-left: 20px;
+                color: orangered;
+            }
+        }
+    }
+}

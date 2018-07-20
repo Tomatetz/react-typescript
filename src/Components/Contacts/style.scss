@@ -1,0 +1,51 @@
+
+.main-wrapper {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .users-container {
+
+        > li {
+            width: 800px;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #dfdfdf;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 200px 300px 300px;
+            color: #444;
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+                &:hover {
+                    color: blueviolet;
+                }
+            }
+
+            .phone {
+                color: rgb(45, 171, 216);
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .pagination {
+        padding: 10px;
+        margin: 10px;
+        background-color: #dfdfdf;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &.active {
+            background-color: rgb(137, 78, 196);
+        }
+        &:hover {
+            &:not(.active) {
+                background-color: rgb(170, 140, 199);
+            }
+        }
+    }
+}

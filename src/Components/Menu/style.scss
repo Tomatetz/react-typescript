@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    li.navigation__li {
+        display: inline;
+        padding: 10px;
+        color: #333;
+        background-color: #ddd;
+        cursor: pointer;
+        margin: 10px;
+        text-transform: capitalize;
+        font-size: 13px;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &.active {
+            background-color: rgb(255, 162, 0);
+        }
+        &:hover {
+            background-color: rgb(253, 206, 123);
+        }
+    }
+}

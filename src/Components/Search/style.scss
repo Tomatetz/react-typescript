@@ -1,0 +1,42 @@
+
+.search-wrapper {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    .users-container {
+
+        > li {
+            width: 800px;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #dfdfdf;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 200px 300px 300px;
+            color: #444;
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+                &:hover {
+                    color: blueviolet;
+                }
+            }
+
+            .phone {
+                color: rgb(45, 171, 216);
+                padding: 0 20px;
+            }
+        }
+    }
+
+    input {
+        background-color: #dfdfdf;
+        border: none;
+        outline: none;
+        width: 800px;
+        padding: 10px;
+        margin: 35px 0 20px;
+    }
+}
